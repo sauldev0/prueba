@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://choxraeb5vv6l" path="res://scenes/player.tscn" id="1_by5cn"]
 [ext_resource type="PackedScene" uid="uid://btu82kil7pfva" path="res://scenes/controls.tscn" id="1_h7rqf"]
-[ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_jnofx"]
+[ext_resource type="Script" uid="uid://cxih405avukd4" path="res://scripts/game_manager.gd" id="1_jnofx"]
 [ext_resource type="FontFile" uid="uid://da4gcssh8onri" path="res://fonts/PixelOperator8-Bold.ttf" id="2_8wjga"]
 [ext_resource type="Texture2D" uid="uid://cg6dd38nwotip" path="res://sprites/world_tileset.png" id="2_itvs6"]
 [ext_resource type="PackedScene" uid="uid://5qb6lhmpy371" path="res://scenes/platform.tscn" id="3_4xgna"]
@@ -215,8 +215,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_r1t37"]
 _data = {
-"RESET": SubResource("Animation_7gu25"),
-"move": SubResource("Animation_0lfpn")
+&"RESET": SubResource("Animation_7gu25"),
+&"move": SubResource("Animation_0lfpn")
 }
 
 [sub_resource type="Animation" id="Animation_opa0i"]
@@ -253,8 +253,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_wrsua"]
 _data = {
-"RESET": SubResource("Animation_opa0i"),
-"move": SubResource("Animation_jtvje")
+&"RESET": SubResource("Animation_opa0i"),
+&"move": SubResource("Animation_jtvje")
 }
 
 [sub_resource type="Animation" id="Animation_qajf2"]
@@ -291,8 +291,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_oaio2"]
 _data = {
-"RESET": SubResource("Animation_qajf2"),
-"move": SubResource("Animation_1oqw8")
+&"RESET": SubResource("Animation_qajf2"),
+&"move": SubResource("Animation_1oqw8")
 }
 
 [sub_resource type="Animation" id="Animation_x20hv"]
@@ -329,8 +329,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3x4q1"]
 _data = {
-"RESET": SubResource("Animation_x20hv"),
-"move": SubResource("Animation_s2qgs")
+&"RESET": SubResource("Animation_x20hv"),
+&"move": SubResource("Animation_s2qgs")
 }
 
 [node name="Game" type="Node2D"]
@@ -492,7 +492,7 @@ position = Vector2(769, 198)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platforms/platform2"]
 libraries = {
-"": SubResource("AnimationLibrary_r1t37")
+&"": SubResource("AnimationLibrary_r1t37")
 }
 autoplay = "move"
 
@@ -501,7 +501,7 @@ position = Vector2(1344, 56)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platforms/platform3"]
 libraries = {
-"": SubResource("AnimationLibrary_wrsua")
+&"": SubResource("AnimationLibrary_wrsua")
 }
 autoplay = "move"
 
@@ -510,7 +510,7 @@ position = Vector2(1536, 56)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platforms/platform4"]
 libraries = {
-"": SubResource("AnimationLibrary_oaio2")
+&"": SubResource("AnimationLibrary_oaio2")
 }
 autoplay = "move"
 
@@ -519,7 +519,7 @@ position = Vector2(1760, 56)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platforms/platform5"]
 libraries = {
-"": SubResource("AnimationLibrary_3x4q1")
+&"": SubResource("AnimationLibrary_3x4q1")
 }
 autoplay = "move"
 
